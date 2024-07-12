@@ -1,0 +1,120 @@
+
+*{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*NavBar*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 320px 0px;
+    padding: 30px 0px 30px;
+}
+.links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav h1{
+    font-size: 20px;
+}
+.nav h1 span{
+    color:rgb(10, 62, 167);
+}
+
+/*homePage*/
+.home-container{
+    display: flex;
+    flex:auto;
+    margin: 150px 320px 100px;
+    gap: 25px;
+}
+.home-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+.home-text p{
+    font-size: 15px;
+}
+.home-text h1{
+    font-size: 40px;
+}
+.home-container img{
+    max-width: 700px;
+    min-width: 0px;
+}
+.homeBtn{
+    background-color: rgb(10, 62, 167);
+    color: white;
+    max-width: 130px;
+    border: solid white;
+    border-radius: 4px;
+    padding: 7px;
+}
+/*AboutPage*/
+.about-container{
+    display: flex;
+    margin: 50px 340px 0px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+}
+/*SkillsPage*/
+.skill-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    margin: 100px 300px 100px;
+}
+.skill-page-container h2{
+    font-size: 30px;
+}
+
+.skill-item-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+.skill-item{
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.skill-item h3{
+    color: rgb(72, 137, 236);
+}
+.skill-item p{
+    text-wrap: wrap;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 30px;
+}
+footer p{
+    color: white;
+}
+.footer-links{
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 14px
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+    border: solid white;
+    padding: 4px;
+    border-radius: 4px;
+}

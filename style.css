@@ -8,8 +8,9 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    margin: 0px 320px 0px;
+    margin: 0px 250px 0px;
     padding: 30px 0px 30px;
+    border-bottom: solid black 1px;
 }
 .links{
     display: flex;
@@ -27,20 +28,20 @@
 .home-container{
     display: flex;
     flex:auto;
-    margin: 150px 320px 100px;
+    margin: 150px 250px 150px;
     gap: 25px;
 }
 .home-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 27px;
+    gap: 33px;
 }
 .home-text p{
-    font-size: 15px;
+    font-size: 17px;
 }
 .home-text h1{
-    font-size: 40px;
+    font-size: 46px;
 }
 .home-container img{
     max-width: 700px;
@@ -57,7 +58,7 @@
 /*AboutPage*/
 .about-container{
     display: flex;
-    margin: 50px 340px 0px;
+    margin: 50px 250px 0px;
 }
 .about-text{
     display: flex;
@@ -69,7 +70,7 @@
     flex-direction: column;
     align-items: center;
     gap: 28px;
-    margin: 100px 300px 100px;
+    margin: 100px 250px 100px;
 }
 .skill-page-container h2{
     font-size: 30px;

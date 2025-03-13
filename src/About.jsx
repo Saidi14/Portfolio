@@ -1,3 +1,4 @@
+
 function About(){
     return(
         <div className="about">
@@ -8,7 +9,7 @@ function About(){
                     I have experience developing desktop applications and websites.
                 </p>
             </div>
-            <img src="./Portfolio/home-img.png" alt="Home Image"/>
+            <img src="Portfolio/home-img.png" alt="Home Image"/>
         </div>
     )
 }

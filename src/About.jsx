@@ -1,4 +1,4 @@
-import homeImage from "./assets/home-img.png";
+import home from "/home.png";
 function About(){
     return(
         <div className="about">
@@ -9,7 +9,7 @@ function About(){
                     I have experience developing desktop applications and websites.
                 </p>
             </div>
-            <img src="{homeImage}" alt="Home Image"/>
+            <img src={home} alt="Home Image"/>
         </div>
     )
 }

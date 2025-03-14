@@ -18,9 +18,10 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  margin: 0px 250px 0px;
+  margin: 0px 250px 150px;
   padding: 0px 0px 0px;
   border-bottom: solid black 1px;
+  
 }
 header h1 span{
   color: rgb(59, 88, 182);
@@ -53,7 +54,7 @@ header ul li:hover{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 50px 250px 50px;
+  margin: 50px 250px 150px;
   gap: 33px;
   padding: 40px;
   border-radius: 15px;
@@ -76,7 +77,9 @@ header ul li:hover{
 /*Skills*/
 .skillContainer{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0px 250px 150px;
 }
 .skillCard{
   border: 1px solid rgb(230, 230, 230);
@@ -84,7 +87,8 @@ header ul li:hover{
   max-width: 250px;
   text-align: center;
   padding: 20px;
-  margin: 0px -70px 0px;
+  margin: 20px;
+
 }
 .skillCard:hover{
   box-shadow: 5px 5px 5px hsla(0, 0%, 27%, 0.301);
@@ -93,23 +97,83 @@ header ul li:hover{
 }
 .skillCard img{
   border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+.skillCard img:hover{
+  transform: rotate(360deg);
+  transition: 1.2s;
 }
 
-/*TimeLine*/
-.timeLineContainer{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.timeLineElement{
-  text-align: center;
-  margin: 50px 0px 50px;
-}
+/*Project Section*/
 .projectSection{
   text-align: center;
 }
+.projectCard{
+  display: flex;
+  justify-content: center;
+}
+.rightSideProjectCardHidden{
+  transform: translate(0%, 200%);
+  max-height: 150px;
+  opacity: 0;
+  transition: 400ms;
+  
+}
+.rightSideProjectCard{
+  max-height: 150px;
+  transform: translate(0%, 120%);
+  opacity: 1;
+  transition: 400ms;
+  transition-delay: 400ms;
+}
+.leftSideProjectCard{
+  transition: 500ms;
+}
+.leftSideProjectCardHidden{
+  margin-left: 25%;
+  transition: 400ms;
+  transition-delay: 400ms;
+}
+.projectImage{
+  position: relative;
+  z-index: 0;
+}
+.hiddenButton{
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 400ms;
+  border: none;
+  background-color: rgb(84, 117, 228);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.hiddenButton span{
+  position:relative;
+}
+.hiddenButton span:after{
+  content: ' \00bb';
+  opacity: 0;
+}
+
+.projectImage:hover .hiddenButton{
+  opacity: 1;
+  transition: 400ms;
+}
+.hiddenButton:hover{
+  opacity: 1;
+  padding-right: 17px;
+}
+.hiddenButton:hover span:after{
+  opacity: 1;
+}
+
 footer{
   display: inline-block;
   width: 100%;
@@ -118,3 +182,4 @@ footer{
   margin: 100px 0px 0px;
   padding: 50px 0px 50px;
 }
+

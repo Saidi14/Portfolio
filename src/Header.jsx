@@ -6,7 +6,6 @@ function Header(){
                 <ul>
                     <li>Home</li>
                     <li>Skills</li>
-                    <li>Timeline</li>
                     <li>Projects</li>
                 </ul>
             </nav>

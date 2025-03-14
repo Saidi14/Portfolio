@@ -30,7 +30,7 @@ function SkillPanel(){
                 />
                 <SkillCard
                     title="Backend Development"
-                    content=""
+                    content="Experience with PHP, Firebase and Java"
                     imageSrc={backend}
                 />
                 <SkillCard

@@ -8,8 +8,8 @@ import git from "/git.svg"
 function SkillPanel(){
     return(
         <>
-            <h2 style={{textAlign: "Center"}}>Skills</h2>
-            <div className="skillContainer">
+            <h2 id="Skills" style={{textAlign: "Center"}}>Skills</h2>
+            <div className="skillContainer" id="SkillPanel">
                 <SkillCard
                     title = "Java"
                     content = {["OOP", "Swing", "JDBC"]}

@@ -1,14 +1,14 @@
+import AnchorLink from "react-anchor-link-smooth-scroll"
+
 function Header(){
     return (
         <header>
             <h1>Saidi <span>Mwamchera</span></h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                </ul>
-            </nav>
+            <div className="links">
+                    <AnchorLink href="">Home</AnchorLink>
+                    <AnchorLink href="#Skills">Skills</AnchorLink>
+                    <AnchorLink href="">Projects</AnchorLink>
+            </div>
         </header>
     )
 }

@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className="content">
+    <>
       <div className="bgContainer">
         <Header/>
         <About/>
@@ -22,7 +22,7 @@ function App() {
       <SkillPanel/>
       <ProjectSection/>
       <Footer/>
-    </div>
+    </>
   )
 }
 

@@ -5,7 +5,7 @@ function ProjectCard(
         description = "A very interesting description about my very interesting project",
         imageSrc = "https://placehold.co/400x300",
         imageAlt ="Project Image",
-        technologies = "Technologies used in the project"
+        technologies = ["Technology1", "Technology2"]
         
     }
 ){  
@@ -23,7 +23,13 @@ function ProjectCard(
                         <span>{textShown? "Show Less" : "Show More"}</span>
                     </button>
                 </div>
-                <p>{technologies}</p>
+                <ul className="technologyList">
+                    {
+                        technologies.map((technology) => (
+                        <li>{technology}</li>
+                        ))  
+                    }
+                </ul>
             </div>
             <p className={textShown?"rightSideProjectCard": "rightSideProjectCardHidden"}>
                 {description}

@@ -4,9 +4,12 @@ function About(){
         <div className="about">
             <div className="aboutText">
                 <h1>Software Developer</h1>
-                <p>Hello! My name is Saidi. I am an aspiring full-stack Developer, 
+                <p>
+                    Hello! My name is Saidi. I am an aspiring full-stack developer, 
                     currently in my final year of studies. 
-                    I have experience developing desktop applications and websites.
+                    I am familiar with may programming languages and frameworks and 
+                    and have developed full-stack websites, desktop applications and 
+                    mobile applications.
                 </p>
             </div>
             <img src={home} alt="Home Image"/>

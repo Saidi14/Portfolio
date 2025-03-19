@@ -15,8 +15,10 @@ function App() {
 
   return (
     <div className="content">
-      <Header/>
-      <About/>
+      <div className="bgContainer">
+        <Header/>
+        <About/>
+      </div>
       <SkillPanel/>
       <ProjectSection/>
       <Footer/>

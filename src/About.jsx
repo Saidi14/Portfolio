@@ -7,8 +7,8 @@ function About(){
                 <p>
                     Hello! My name is Saidi. I am an aspiring full-stack developer, 
                     currently in my final year of studies. 
-                    I am familiar with many programming languages and frameworks and 
-                    and have developed full-stack websites, desktop applications and 
+                    I am familiar with many programming languages and frameworks. I
+                    have created full-stack websites, desktop applications and 
                     mobile applications.
                 </p>
             </div>

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ProjectCardInner from "./ProjectCardInner";
 function ProjectCard(
     {
         title = "Project",
@@ -8,32 +9,18 @@ function ProjectCard(
         technologies = ["Technology1", "Technology2"]
         
     }
-){  
-    let [textShown, setTextShown] = useState(false);
-    let handleClick = () => {
-        textShown = setTextShown(!textShown);
-    }
+){
     return(
         <div className="projectCard">
-            <div className={textShown? "leftSideProjectCard": "leftSideProjectCardHidden"}>
-                <h2>{title}</h2>
-                <div className="projectImage">
-                    <img src={imageSrc} alt = {imageAlt}/>
-                    <button className="hiddenButton" onClick={(e) => handleClick(e)}>
-                        <span>{textShown? "Show Less" : "Show More"}</span>
-                    </button>
-                </div>
-                <ul className="technologyList">
-                    {
-                        technologies.map((technology) => (
-                        <li>{technology}</li>
-                        ))  
-                    }
-                </ul>
-            </div>
-            <p className={textShown?"rightSideProjectCard": "rightSideProjectCardHidden"}>
-                {description}
-            </p>
+            <h2>{title}</h2>
+            <ProjectCardInner imageSrc={imageSrc} imageAlt={imageAlt} description={description}/>
+            <ul className="technologyList">
+                {
+                    technologies.map((technology) => (
+                    <li>{technology}</li>
+                    ))  
+                }
+            </ul>
         </div>
     )
 }

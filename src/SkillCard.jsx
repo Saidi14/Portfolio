@@ -7,11 +7,11 @@ function SkillCard(
 ){
     return(
         <div className="skillCard">
-            <img src={imageSrc} alt={imageAlt}></img>
+            <img src={imageSrc} alt={imageAlt} className="skillImage"></img>
             <h3>{title}</h3>
             <ul>
                 {
-                content.map((contentItem) => (<li>{contentItem}</li>))
+                    content.map((contentItem) => (<li>{contentItem}</li>))
                 }
             </ul>
         </div>

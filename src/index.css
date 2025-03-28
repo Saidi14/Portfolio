@@ -39,7 +39,7 @@ nav{
   margin: 0px;
   padding: 0px;
 }
-.links a{
+.navlink{
   font-weight: bolder;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@ nav{
   cursor: pointer;
   transition: 500ms;
 }
-.links a:hover{
+.navlink:hover{
   background-color: #dddddd;
 }
 
@@ -128,6 +128,7 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
 }
 .projectInnerContainer{
   display: flex;
@@ -161,6 +162,9 @@ nav{
   position: relative;
   overflow: hidden;
   z-index: 0;
+}
+.projectImage img{
+  max-width: 700px;
 }
 .hiddenButton{
   opacity: 0;
@@ -202,11 +206,18 @@ nav{
 }
 
 footer{
-  display: inline-block;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
   background-color: black;
   color: aliceblue;
   margin: 100px 0px 0px;
-  padding: 50px 0px 50px;
+  padding: 50px 30px 50px;
 }
-
+.footerLinks{
+  display: flex;
+  gap: 10px;
+}
+.footerImage{
+  height: 48px;
+  width: 48px;
+}

@@ -7,7 +7,7 @@ import cloud from "/cloud.svg"
 import git from "/git.svg"
 function SkillPanel(){
     return(
-        <>
+        <div className="skillBg">
             <h2 id="Skills" style={{textAlign: "Center"}}>Skills</h2>
             <div className="skillContainer" id="SkillPanel">
                 <SkillCard
@@ -44,7 +44,7 @@ function SkillPanel(){
                     imageSrc={git}
                 />
             </div>
-        </>
+        </div>
     )
 }
 export default SkillPanel

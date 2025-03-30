@@ -12,7 +12,7 @@ function About(){
                     mobile applications.
                 </p>
             </div>
-            <img src={home} alt="Home Image"/>
+            
         </div>
     )
 }

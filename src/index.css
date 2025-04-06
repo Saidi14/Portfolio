@@ -22,7 +22,7 @@ header{
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px 20px;
+  padding: 0px 100px 0px;
   border-bottom: solid rgb(255, 255, 255) 1px;
 
 }
@@ -32,6 +32,7 @@ header h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
   color: white;
+  align-self: center;
 }
 nav{
   display: flex;
@@ -50,12 +51,12 @@ nav{
   align-items: center;
   text-decoration: none;
   color: inherit;
-  padding: 20px 20px 20px;
+  padding: 30px 25px 30px;
   cursor: pointer;
   transition: 500ms;
 }
 .navlink:hover{
-  background-color:rgb(63, 80, 136);
+  background-color:rgb(77, 77, 77);
 }
 
 .aboutBg{

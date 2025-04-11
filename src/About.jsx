@@ -1,8 +1,10 @@
-import home from "/home.png";
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import codeImage from "/about.svg"
 function About(){
     return(
         <div className="about">
             <div className="aboutText">
+                <img src={codeImage}></img>
                 <h1>Software Developer</h1>
                 <p>
                     Hello! My name is Saidi. I am an aspiring full-stack developer, 
@@ -11,8 +13,8 @@ function About(){
                     have created full-stack websites, desktop applications and 
                     mobile applications.
                 </p>
+                <AnchorLink href="#footer">Contact</AnchorLink>
             </div>
-            
         </div>
     )
 }

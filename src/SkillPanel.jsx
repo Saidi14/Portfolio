@@ -7,7 +7,7 @@ import cloud from "/cloud.svg"
 import git from "/git.svg"
 function SkillPanel(){
     return(
-        <div className="skillBg">
+        <div className="skillBg" id="skillBg">
             <h2 id="Skills" style={{textAlign: "Center"}}>Skills</h2>
             <div className="skillContainer" id="SkillPanel">
                 <SkillCard

@@ -92,9 +92,9 @@ nav{
 }
 
 .skillBg{
-  padding-top:7%;
-  
-  background-size: cover;
+  padding-top:3%;
+  background-color: rgb(35, 35, 35);
+  color: rgb(212, 212, 212);
 }
 .skillContainer{
   display: flex;
@@ -110,13 +110,22 @@ nav{
   margin: 20px;
   width: 230px;
   height: 270px;
-  background: rgb(238, 238, 238);
+  background: rgb(59, 59, 59);
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 1.5px );
   border-radius: 10px;
+  transition: 300ms;
+}
+.skillCard h3{
+  font-size: larger;
+  color: rgb(242, 242, 224);
+}
+.skillCard ul{
+  font-weight: bold;
 }
 .skillCard:hover{
   transition: 300ms;
+  box-shadow: #7b7b7b 1px 1px 8px;
   width: 250px;
   height: 290px;
   margin: 10px;
@@ -124,6 +133,7 @@ nav{
 
 .skillImage{
   border-radius: 50%;
+  padding: 10px;
   width: 120px;
   height: 120px;
 }

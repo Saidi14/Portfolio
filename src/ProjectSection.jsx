@@ -13,7 +13,7 @@ function ProjectSection(){
     }
     return(
         <div className="projectSection" id="projectSection">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <Carousel
             responsive={responsive}
             infinite={true}

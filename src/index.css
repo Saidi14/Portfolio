@@ -22,9 +22,10 @@ header{
   z-index: 2;
   display: flex;
   justify-content: space-between;
-  margin: 0px 100px 0px;
+  padding: 0px 100px 0px;
   border-bottom: solid rgb(109, 109, 109);
-
+  background-color: rgb(44, 44, 44);
+  color: rgb(212, 212, 212);
 }
 
 header h1{
@@ -59,16 +60,14 @@ nav{
   background-color:rgba(77, 77, 77, 0.575);
 }
 
-.aboutBg{
-  background-color: rgb(44, 44, 44);
-  color: rgb(212, 212, 212);
-}
 .about{
   display: flex;
   text-align: center;
   flex-direction: row;
   justify-content: center;
   padding: 8% 150px 13%;
+  background-color: rgb(44, 44, 44);
+  color: rgb(212, 212, 212);
 }
 .aboutText{
   display: flex;
@@ -105,7 +104,11 @@ nav{
 }
 .skillCard{
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 6px;
   padding: 20px;
   margin: 20px;
   width: 230px;
@@ -137,10 +140,6 @@ nav{
   width: 120px;
   height: 120px;
 }
-.skillImage:hover{
-  transform: rotate(360deg);
-  transition: 1.2s;
-}
 .skillCard ul{
   padding-left: 0px;
 }
@@ -150,15 +149,18 @@ nav{
 
 
 .projectSection{
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(44, 44, 44);
+  color: rgb(212, 212, 212);
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 .projectCard{
   display: flex;
   flex-direction: column;
+  gap: 15px;
   justify-content: center;
   margin-top: 50px;
 }
@@ -177,14 +179,14 @@ nav{
 .rightSideProjectCardHidden{
   transform: translate(0%, 200%);
   max-height: 150px;
-  max-width: 400px;
+  max-width: 450px;
   opacity: 0;
   transition: 400ms;
 }
 .rightSideProjectCard{
   margin-left: 15px;
   max-height: 150px;
-  max-width: 400px;
+  max-width: 450px;
   transform: translate(0%, 120%);
   opacity: 1;
   transition: 400ms;
@@ -198,7 +200,9 @@ nav{
   z-index: 0;
 }
 .projectImage img{
-  max-width: 700px;
+  max-width: 750px;
+  height: 450px;
+  border: solid 5px rgb(196, 196, 196);
 }
 .hiddenButton{
   opacity: 0;
@@ -242,7 +246,9 @@ nav{
 footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: black;
+  font-weight: bold;
   color: aliceblue;
   padding: 50px 30px 50px;
 }

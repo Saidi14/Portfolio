@@ -30,7 +30,7 @@ function SkillPanel(){
                 />
                 <SkillCard
                     title="Backend Development"
-                    content={["PHP", "SQLite", "Firebase"]}
+                    content={["PHP", "SQLite"]}
                     imageSrc={backend}
                 />
                 <SkillCard

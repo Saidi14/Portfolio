@@ -12,7 +12,7 @@ function SkillPanel(){
             <div className="skillContainer" id="SkillPanel">
                 <SkillCard
                     title = "Java"
-                    content = {["OOP", "Swing", "JDBC"]}
+                    content = {["Spring Boot", "Swing", "Vaadin"]}
                     imageSrc={java}
                     imageAlt="Java Image"
                 />
@@ -24,13 +24,13 @@ function SkillPanel(){
                 />
                 <SkillCard
                     title="Mobile Development"
-                    content={["Android Studio", "Kotlin", "React Native"]}
+                    content={["Android Studio", "Kotlin"]}
                     imageSrc={android}
                     imageAlt="android icon"
                 />
                 <SkillCard
                     title="Backend Development"
-                    content={["PHP", "SQLite"]}
+                    content={["PHP", "MySQL"]}
                     imageSrc={backend}
                 />
                 <SkillCard
